@@ -1,0 +1,13 @@
+{
+  "name": "jasmine-unit-test",
+  "version": "1.0.0",
+  "scripts": {
+    "test:browser": "web-test-runner --config=web-test-runner.config.mjs"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "web-test-runner-jasmine": "^0.1.4"
+  }
+}
