@@ -1,5 +1,5 @@
 {
-  "name": "jasmine-unit-test",
+  "name": "test-jasmine-browser",
   "version": "1.0.0",
   "scripts": {
     "test:browser": "web-test-runner --config=web-test-runner.config.mjs"
