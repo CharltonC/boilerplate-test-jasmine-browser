@@ -1,5 +1,7 @@
+import { add } from './sample';
+
 describe('test', () => {
   it('should test', () => {
-    expect(1).toBe('1');
+    expect(add()).toBe(1);
   });
 });
