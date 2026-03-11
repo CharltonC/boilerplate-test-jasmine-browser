@@ -2,12 +2,16 @@
   "name": "test-jasmine-browser",
   "version": "1.0.0",
   "scripts": {
-    "test:browser": "web-test-runner --config=web-test-runner.config.mjs"
+    "postinstall": "echo '--- Installing Chromium for Playwright ---' && npx playwright install chromium",
+    "test": "npx wtr --coverage",
+    "test:watch": "wtr --watch"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "web-test-runner-jasmine": "^0.1.4"
+    "@web/test-runner": "^0.20.2",
+    "@web/test-runner-playwright": "^0.11.1",
+    "web-test-runner-jasmine": "^0.1.5"
   }
 }
