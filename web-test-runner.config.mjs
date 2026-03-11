@@ -18,7 +18,7 @@ export default {
   coverageConfig: {
     report: true,
     reportDir: 'coverage-report',
-    reporters: ['lcov', 'text-summary', 'html'],
+    reporters: ['text-summary', 'html'],
     threshold: {
       statements: 80,
       branches: 80,
