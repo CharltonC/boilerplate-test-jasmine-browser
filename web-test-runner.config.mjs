@@ -1,21 +1,7 @@
-// /**
-//  * - Debug URL in Dev tool source tab:    http://localhost:8000
-//  * - Coverage report file location:       coverage/Icov-report/
-//  */
-// import { jasmineTestRunnerConfig } from 'web-test-runner-jasmine';
-
-// export default {
-//   ...jasmineTestRunnerConfig(),
-//   concurrency: 10,
-//   nodeResolve: true,
-//   coverage: true,
-//   rootDir: 'src',
-//   files: '**/*.spec.js',
-//   // watch: true,
-// };
-
-
-// web-test-runner.config.mjs
+/**
+ * - Debug URL in Dev tool source tab:    http://localhost:8000
+ * - Coverage report file location:       coverage/Icov-report/
+ */
 import { jasmineTestRunnerConfig } from 'web-test-runner-jasmine';
 import { playwrightLauncher } from '@web/test-runner-playwright';
 
@@ -24,14 +10,15 @@ export default {
   ...jasmineTestRunnerConfig(),
 
   // 2. Define test files
+  rootDir: 'src',
   files: '**/*.spec.js',
 
   // 3. Configure Coverage
-  coverage: true, // Enables coverage collection
+  coverage: true,
   coverageConfig: {
     report: true,
-    reportDir: 'coverage-report', // Directory for output
-    reporters: ['lcov', 'text-summary', 'html'], // Formats to generate
+    reportDir: 'coverage-report',
+    reporters: ['lcov', 'text-summary', 'html'],
     threshold: {
       statements: 80,
       branches: 80,
